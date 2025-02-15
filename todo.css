@@ -1,0 +1,105 @@
+        /* Basic styling for the app */ 
+     
+        
+        
+/* Define styles for high, medium, and low priority tasks */
+.high-priority:hover {
+    background-color: red;
+}
+
+.medium-priority:hover {
+    background-color: yellow;
+}
+
+.low-priority:hover {
+    background-color: lightgreen;
+}
+
+
+        body::after {
+            content: "";
+            background: url(Designer\ \(2\).png);
+            opacity: 0.7;
+           
+        }
+        
+        
+        
+          
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(77, 0, 128);
+            background-image: url(Designer\ \(2\).png);
+            position: relative;
+            background-repeat:initial;
+                    
+            
+        
+        }
+                .completed {
+                    text-decoration: line-through;
+                  
+                }
+                .container {
+                    max-width:fit-content;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border-radius: 5px;
+                    background-color: gray;
+                     /* background-image: url(Designer.png); 
+                    position: relative; */
+                    
+
+                }
+              
+
+                /* Style the "Add Task" button */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .date,.select,.task{
+           
+            padding: 8px 12px;
+        }
+        .btn
+        {
+            background-color: green;
+            color: #060606;
+            border: none;
+            font-family: Arial, sans-serif;
+            padding: 8px 12px;
+            cursor: pointer;   
+        }
+        #taskInput,#dateInput,#priorityInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+          }
+         
+          #taskList {
+
+            border-bottom: 1px solid #ddd;
+            display: block;
+         
+          }
+          #taskList li {
+            border-bottom: 1px solid #ddd;;
+            padding: top 4px;;
+          }
+
+
+          .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+          .due-date {
+            margin-left: 10px;
+          }

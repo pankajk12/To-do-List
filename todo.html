@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+
+</head>
+<body  >
+    <div class="container">
+   <center><h2><strong> <u>My To-Do List</u></strong> </h2></center> 
+    <input class="task"  type="text" id="taskInput" placeholder="Add New task...">
+    <input  class="date"  type="date" id="dateInput">
+    <select class="select" id="priorityInput">
+        <option class="high" value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    <button onclick="newTask()">Add Task</button>
+    <ol  value="Task" id="taskList">
+    </ol>
+
+    <button  class="btn" onclick="exportTasks()">Export</button>
+      </div>
+
+
+</body>
+</html>
